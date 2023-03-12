@@ -19,117 +19,132 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                margin: EdgeInsets.only(bottom: 10),
-                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Row(
-                  children: [
-                    Image.asset(
-                      'assets/images/weight.png',
-                      width: 24,
-                      height: 24,
-                    ),
-                    SizedBox(width: 10),
-                    Expanded(
-                      child: Text(
-                        'Current weight',
+              GestureDetector(
+                onTap: () {
+                  print('Первый Контейнер нажат');
+                },
+                child: Container(
+                  margin: EdgeInsets.only(bottom: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Row(
+                    children: [
+                      Image.asset(
+                        'assets/images/weight.png',
+                        width: 24,
+                        height: 24,
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Text(
+                          'Current weight',
+                          style: TextStyle(
+                            fontFamily: 'Poppins',
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        '--kgs',
                         style: TextStyle(
+                          color: Color(0xff898A8D),
                           fontFamily: 'Poppins',
                           fontSize: 14,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
-                    ),
-                    Text(
-                      '--kgs',
-                      style: TextStyle(
-                        color: Color(0xff898A8D),
-                        fontFamily: 'Poppins',
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-              Container(
-                margin: EdgeInsets.only(bottom: 10),
-                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Row(
-                  children: [
-                    Image.asset(
-                      'assets/images/weight.png',
-                      width: 24,
-                      height: 24,
-                    ),
-                    SizedBox(width: 10),
-                    Expanded(
-                      child: Text(
-                        'Target weight',
+              GestureDetector(
+                onTap: () {
+                  print('Второй Контейнер нажат');
+                },
+                child: Container(
+                  margin: EdgeInsets.only(bottom: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Row(
+                    children: [
+                      Image.asset(
+                        'assets/images/weight.png',
+                        width: 24,
+                        height: 24,
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Text(
+                          'Target weight',
+                          style: TextStyle(
+                            fontFamily: 'Poppins',
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        '--kgs',
                         style: TextStyle(
+                          color: Color(0xff898A8D),
                           fontFamily: 'Poppins',
                           fontSize: 14,
                           fontWeight: FontWeight.w400,
-                          color: Colors.black,
                         ),
                       ),
-                    ),
-                    Text(
-                      '--kgs',
-                      style: TextStyle(
-                        color: Color(0xff898A8D),
-                        fontFamily: 'Poppins',
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-              Container(
-                margin: EdgeInsets.only(bottom: 10),
-                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Row(
-                  children: [
-                    Image.asset(
-                      'assets/images/height.png',
-                      width: 24,
-                      height: 24,
-                    ),
-                    const SizedBox(width: 10),
-                    const Expanded(
-                      child: Text(
-                        'Height',
+              GestureDetector(
+                onTap: () {
+                  print('Второй Контейнер нажат');
+                },
+                child: Container(
+                  margin: EdgeInsets.only(bottom: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Row(
+                    children: [
+                      Image.asset(
+                        'assets/images/height.png',
+                        width: 24,
+                        height: 24,
+                      ),
+                      const SizedBox(width: 10),
+                      const Expanded(
+                        child: Text(
+                          'Height',
+                          style: TextStyle(
+                            fontFamily: 'Poppins',
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+                      const Text(
+                        '--cms',
                         style: TextStyle(
+                          color: Color(0xff898A8D),
                           fontFamily: 'Poppins',
                           fontSize: 14,
                           fontWeight: FontWeight.w400,
-                          color: Colors.black,
                         ),
                       ),
-                    ),
-                    const Text(
-                      '--cms',
-                      style: TextStyle(
-                        color: Color(0xff898A8D),
-                        fontFamily: 'Poppins',
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ],
